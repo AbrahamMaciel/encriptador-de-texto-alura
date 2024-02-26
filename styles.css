@@ -1,3 +1,64 @@
-html{
+body{
     font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 95vh;
+    box-sizing: border-box;
+}
+
+textarea{
+    margin: auto;
+}
+
+.btn{
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin: 10px;
+    padding: 5px 50px;
+}
+
+.input-section{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 60%;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#text-input{
+
+}
+
+
+.output-section{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 40%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    display: flex;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright{
+    display: inline-block;
+    font-size: 14px;
+    
 }
