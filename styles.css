@@ -7,7 +7,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-color: #F3F5FC;
     height: 95vh;
     box-sizing: border-box;
 }
@@ -19,11 +19,43 @@ textarea{
 .btn{
     justify-content: center;
     align-items: center;
+    text-align: center;
+    width: 100%;
+    
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+
+#btn_label{
+    font-size: 14px;
+    align-self: start;
+    margin-left: 20%;
+}
+
+.btnEncrypt{
+    width: 30%;
+    color: #D8DFE8;
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 16px;
+    margin: 10px 5px;
+    padding: 10px 50px;
+}
+
+.btnDecrypt{
+    width: 30%;
+    color: #0A3871;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 16px;
+    margin: 10px 5px;
+    padding: 10px 50px;
 }
 
 button{
-    margin: 10px;
-    padding: 5px 50px;
+    
+    /* text-align: center; */
 }
 
 .input-section{
@@ -34,6 +66,10 @@ button{
     justify-content: center;
     align-items: center;
    
+}
+
+#btn_label{
+    justify-content: start;
 }
 
 #text-input{
@@ -48,6 +84,13 @@ button{
     flex: 40%;
     justify-content: center;
     align-items: center;
+}
+
+.container-output{
+    height: 80%;
+    width: 80%;
+    background-color: aquamarine;
+    border-radius: 4px;
 }
 
 footer{
