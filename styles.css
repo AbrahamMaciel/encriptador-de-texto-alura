@@ -1,9 +1,9 @@
-body{
+body {
     font-family: "Inter", sans-serif;
     box-sizing: border-box;
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,96 +12,104 @@ main{
     box-sizing: border-box;
 }
 
-textarea{
+textarea {
     margin: auto;
 }
 
-.btn{
+.btn {
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
-    
+
     font-size: 16px;
     font-weight: 400;
-    
+
 }
 
-#btn_label{
+#btn_label {
     font-size: 14px;
     align-self: start;
     margin-left: 20%;
 }
 
-.btnEncrypt{
+.btnEncrypt {
     width: 30%;
     color: #D8DFE8;
     background-color: #0A3871;
     border: 1px solid #0A3871;
     border-radius: 16px;
     margin: 10px 5px;
-    padding: 10px 50px;
+    padding: 15px 50px;
 }
 
-.btnDecrypt{
+.btnDecrypt {
     width: 30%;
     color: #0A3871;
     background-color: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 16px;
     margin: 10px 5px;
-    padding: 10px 50px;
+    padding: 15px 50px;
 }
 
-button{
-    
-    /* text-align: center; */
+.container-logo {
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.input-section{
+#logo_alura {
+    margin: 20px 30px;
+    max-width: 40%;
+    max-height: 40%;
+}
+
+.input-section {
     display: flex;
     flex-direction: column;
     height: 100%;
-    flex: 60%;
+    flex: 70%;
     justify-content: center;
     align-items: center;
-   
+
 }
 
-#btn_label{
+#btn_label {
     justify-content: start;
 }
 
-#text-input{
-
+#text-input {
+    width: 60%;
+    height: 70%;
 }
 
 
-.output-section{
+.output-section {
     display: flex;
     flex-direction: column;
     height: 100%;
-    flex: 40%;
+    flex: 30%;
     justify-content: center;
     align-items: center;
 }
 
-.container-output{
-    height: 80%;
-    width: 80%;
-    background-color: aquamarine;
-    border-radius: 4px;
+.container-output {
+    height: 95%;
+    width: 85%;
+    background-color: #FFFF;
+    border-radius: 32px;
+    box-shadow: 1px 16px 28px -30px black;
 }
 
-footer{
+footer {
     display: flex;
     height: 5vh;
     justify-content: center;
     align-items: center;
 }
 
-.copyright{
+.copyright {
     display: inline-block;
     font-size: 14px;
-    
+
 }
