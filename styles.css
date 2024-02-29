@@ -13,7 +13,23 @@ main {
 }
 
 textarea {
+    background: none;
     margin: auto;
+    border: none;
+    color: #0A3871;
+    text-transform: lowercase;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    resize: none;
+
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+textarea:focus {
+    outline: none;
 }
 
 .btn {
@@ -93,12 +109,32 @@ textarea {
     align-items: center;
 }
 
+#text-output {
+    color: #495057;
+    font-size: 18px;
+    height: 80%;
+    width: 90%;
+    margin: 5%;
+    /* background: #D8DFE8; */
+}
+
 .container-output {
     height: 95%;
     width: 85%;
     background-color: #FFFF;
     border-radius: 32px;
     box-shadow: 1px 16px 28px -30px black;
+    box-sizing: border-box;
+}
+
+.btn-copy {
+    width: 90%;
+    color: #0A3871;
+    background-color: #FFFF;
+    border: 1px solid #0A3871;
+    border-radius: 16px;
+    margin: 10px 5px;
+    padding: 15px 50px;
 }
 
 footer {
@@ -111,5 +147,4 @@ footer {
 .copyright {
     display: inline-block;
     font-size: 14px;
-
 }
