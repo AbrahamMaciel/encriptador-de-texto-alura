@@ -1,150 +1,170 @@
 body {
-    font-family: "Inter", sans-serif;
-    box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #F3F5FC;
-    height: 95vh;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f5fc;
+  height: 96vh;
+  box-sizing: border-box;
 }
 
 textarea {
-    background: none;
-    margin: auto;
-    border: none;
-    color: #0A3871;
-    text-transform: lowercase;
-    font-size: 24px;
-    font-family: 'Inter', sans-serif;
-    resize: none;
-
+  background: none;
+  margin: auto;
+  border: none;
+  color: #0a3871;
+  text-transform: lowercase;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  resize: none;
 }
 
 ::placeholder {
-    color: #0A3871;
+  color: #0a3871;
 }
 
 textarea:focus {
-    outline: none;
+  outline: none;
 }
 
 .btn {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-
-    font-size: 16px;
-    font-weight: 400;
-
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-#btn_label {
-    font-size: 14px;
-    align-self: start;
-    margin-left: 20%;
+#btn-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #495057;
+  font-size: 14px;
+  align-self: start;
+  margin-left: 20%;
+  gap: 4px;
 }
 
 .btnEncrypt {
-    width: 30%;
-    color: #D8DFE8;
-    background-color: #0A3871;
-    border: 1px solid #0A3871;
-    border-radius: 16px;
-    margin: 10px 5px;
-    padding: 15px 50px;
+  width: 30%;
+  color: #d8dfe8;
+  background-color: #0a3871;
+  border: 1px solid #0a3871;
+  border-radius: 16px;
+  margin: 10px 5px;
+  padding: 15px 50px;
 }
 
 .btnDecrypt {
-    width: 30%;
-    color: #0A3871;
-    background-color: #D8DFE8;
-    border: 1px solid #0A3871;
-    border-radius: 16px;
-    margin: 10px 5px;
-    padding: 15px 50px;
+  width: 30%;
+  color: #0a3871;
+  background-color: #d8dfe8;
+  border: 1px solid #0a3871;
+  border-radius: 16px;
+  margin: 10px 5px;
+  padding: 15px 50px;
 }
 
 .container-logo {
-    width: 100%;
-    box-sizing: border-box;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 40px;
 }
 
 #logo_alura {
-    margin: 20px 30px;
-    max-width: 40%;
-    max-height: 40%;
+  margin: 0px 30px;
+  max-height: 70%;
 }
 
 .input-section {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    flex: 70%;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 70%;
+  justify-content: center;
+  align-items: center;
 }
 
 #btn_label {
-    justify-content: start;
+  justify-content: start;
 }
 
 #text-input {
-    width: 60%;
-    height: 70%;
+  width: 60%;
+  height: 64%;
+  margin: 0px;
 }
 
-
 .output-section {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    flex: 30%;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 30%;
+  justify-content: center;
+  align-items: center;
 }
 
 #text-output {
-    color: #495057;
-    font-size: 18px;
-    height: 80%;
-    width: 90%;
-    margin: 5%;
-    /* background: #D8DFE8; */
+  color: #495057;
+  font-size: 18px;
+  height: 80%;
+  width: 90%;
+  margin: 5%;
+  background-image: url(img/munieco.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90%;
 }
 
 .container-output {
-    height: 95%;
-    width: 85%;
-    background-color: #FFFF;
-    border-radius: 32px;
-    box-shadow: 1px 16px 28px -30px black;
-    box-sizing: border-box;
+  height: 95%;
+  width: 85%;
+  background-color: #ffff;
+  border-radius: 32px;
+  box-shadow: 1px 16px 28px -30px black;
+  box-sizing: border-box;
+}
+
+#container-insider {
+  position: relative;
+  top: -20%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .btn-copy {
-    width: 90%;
-    color: #0A3871;
-    background-color: #FFFF;
-    border: 1px solid #0A3871;
-    border-radius: 16px;
-    margin: 10px 5px;
-    padding: 15px 50px;
+  width: 90%;
+  color: #0a3871;
+  background-color: #ffff;
+  border: 1px solid #0a3871;
+  border-radius: 16px;
+  padding: 15px 50px;
+  /* display: none; */
+}
+
+#btn-copy-container {
+  position: relative;
+  top: -13%;
 }
 
 footer {
-    display: flex;
-    height: 5vh;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  height: 4vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #0a3871;
+  color: #ffff;
 }
 
 .copyright {
-    display: inline-block;
-    font-size: 14px;
+  font-size: 14px;
+  font-weight: 300;
 }
