@@ -139,6 +139,11 @@ textarea:focus {
   text-align: center;
 }
 
+#btn-copy-container {
+  position: relative;
+  top: -13%;
+}
+
 .btn-copy {
   width: 90%;
   color: #0a3871;
@@ -147,11 +152,6 @@ textarea:focus {
   border-radius: 16px;
   padding: 15px 50px;
   /* display: none; */
-}
-
-#btn-copy-container {
-  position: relative;
-  top: -13%;
 }
 
 footer {
@@ -167,4 +167,50 @@ footer {
 .copyright {
   font-size: 14px;
   font-weight: 300;
+}
+
+
+@media only screen and (max-width: 768px){
+  main{
+    flex-direction: column;
+    height: 96vh;
+  }
+
+  .input-section{
+    flex: 80%;
+    width: 100%;
+  }
+
+  .output-section{
+    flex: 15%;
+    width: 100%;
+  }
+
+  .container-output{
+    display: flex;
+    height: 70%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #text-output {
+    background-image: none;
+    margin: auto;
+    width: 90%;
+    height: 80%;
+  }
+
+  #container-insider {
+    position: absolute;
+  }
+
+  #btn-copy-container{
+    display: none;
+  }
+
+  footer{
+    height: 4vh;
+  }
 }
