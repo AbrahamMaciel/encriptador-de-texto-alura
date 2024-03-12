@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="bruh.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <div class="container-centered">
+        <section class="first">
+          <h1>No me sale el textarea</h1>
+          <textarea id="placeholda" cols="30" rows="10"></textarea>
+        </section>
+        <section class="second">
+          <div class="grow-wrap">
+            <textarea
+              name=""
+              id="target"
+              
+              onInput="this.parentNode.dataset.replicatedValue = this.value"
+            ></textarea>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

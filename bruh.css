@@ -1,0 +1,47 @@
+*{
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+}
+
+main{
+    height: 100vh;
+}
+
+.container-centered{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#target{
+    width: 200%
+}
+
+/* Truco con CSS para que el texarea crezca con el contenido */
+
+.grow-wrap {
+    display: grid;
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  .grow-wrap::after {
+    content: attr(data-replicated-value) " ";
+    white-space: pre-wrap;
+    visibility: hidden;
+  }
+
+  .grow-wrap>textarea{
+    resize: vertical;
+    overflow: hidden;
+  }
+
+  .grow-wrap > textarea, .grow-wrap::after {
+    border: 1px solid blue;
+    padding: 0.5rem;
+    font: inherit;
+
+    grid-area: 1 / 1 / 2 / 2;
+  }
