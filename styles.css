@@ -169,24 +169,23 @@ footer {
   font-weight: 300;
 }
 
-
-@media only screen and (max-width: 768px){
-  main{
+@media only screen and (max-width: 768px) {
+  main {
     flex-direction: column;
     height: 96vh;
   }
 
-  .input-section{
+  .input-section {
     flex: 80%;
     width: 100%;
   }
 
-  .output-section{
+  .output-section {
     flex: 15%;
     width: 100%;
   }
 
-  .container-output{
+  .container-output {
     display: flex;
     height: 70%;
     text-align: center;
@@ -210,11 +209,75 @@ footer {
     left: 0;
   }
 
-  #btn-copy-container{
+  #btn-copy-container {
     display: none;
   }
 
-  footer{
+  footer {
     height: 4vh;
   }
+}
+
+@media only screen and (max-width: 425px) {
+  #logo_alura {
+    margin: 0;
+    max-height: none;
+    margin-top: 25px;
+    margin-left: -25px;
+  }
+
+  input-section{
+    flex-shrink: 0;
+  }
+
+  #text-input {
+    width: 90%;
+    font-size: 32px;
+  }
+
+  #btn-label {
+    margin-left: 5%;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .btn > button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .btnDecrypt {
+    background-color: #ffff;
+  }
+
+  .container-output{
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* #text-output{
+    resize: vertical;
+  } */
+
+  #container-insider {
+    align-items: center;
+    justify-content: center;  
+    width: 80%;
+    left: auto;
+    right: auto;
+    top: auto;
+    /* No estoy seguro de que paso aca pero funciono */
+  }
+
+  #container-insider > p {
+    width: 90%;
+  }
+
+  /* Nose como hacer crecer el texare sin que arruine todo lo que hay arriba */
 }
