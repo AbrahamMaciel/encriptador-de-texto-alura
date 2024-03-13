@@ -16,7 +16,7 @@ main{
 }
 
 #target{
-    width: 200%
+    
 }
 
 /* Truco con CSS para que el texarea crezca con el contenido */
@@ -30,11 +30,11 @@ main{
   .grow-wrap::after {
     content: attr(data-replicated-value) " ";
     white-space: pre-wrap;
-    visibility: hidden;
+    /* visibility: hidden; */
   }
 
   .grow-wrap>textarea{
-    resize: vertical;
+    resize: none;
     overflow: hidden;
   }
 
