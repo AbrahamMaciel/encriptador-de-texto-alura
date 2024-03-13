@@ -200,10 +200,14 @@ footer {
     margin: auto;
     width: 90%;
     height: 80%;
+    padding: 1rem;
   }
 
   #container-insider {
     position: absolute;
+    top: 85vh;
+    right: 0;
+    left: 0;
   }
 
   #btn-copy-container{
