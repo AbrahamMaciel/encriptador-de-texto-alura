@@ -4,7 +4,8 @@
 }
 
 main{
-    height: 100vh;
+    height: auto;
+    background-color: bisque;
 }
 
 .container-centered{
@@ -19,18 +20,28 @@ main{
     
 }
 
+.second{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 20%;
+}
+
 /* Truco con CSS para que el texarea crezca con el contenido */
 
 .grow-wrap {
     display: grid;
     flex-grow: 1;
-    justify-content: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+    
   }
 
   .grow-wrap::after {
     content: attr(data-replicated-value) " ";
     white-space: pre-wrap;
-    /* visibility: hidden; */
+    visibility: hidden;
   }
 
   .grow-wrap>textarea{
@@ -42,6 +53,7 @@ main{
     border: 1px solid blue;
     padding: 0.5rem;
     font: inherit;
+    
 
     grid-area: 1 / 1 / 2 / 2;
   }
