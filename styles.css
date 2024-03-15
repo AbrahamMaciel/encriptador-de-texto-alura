@@ -1,283 +1,41 @@
-body {
-  font-family: "Inter", sans-serif;
-  box-sizing: border-box;
+body{
+  min-height: 100dvh;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f3f5fc;
-  height: 96vh;
-  box-sizing: border-box;
-}
-
-textarea {
-  background: none;
-  margin: auto;
-  border: none;
-  color: #0a3871;
-  text-transform: lowercase;
-  font-size: 24px;
-  font-family: "Inter", sans-serif;
-  resize: none;
-}
-
-::placeholder {
-  color: #0a3871;
-}
-
-textarea:focus {
-  outline: none;
-}
-
-.btn {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-#btn-label {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #495057;
-  font-size: 14px;
-  align-self: start;
-  margin-left: 20%;
-  gap: 4px;
-}
-
-.btnEncrypt {
-  width: 30%;
-  color: #d8dfe8;
-  background-color: #0a3871;
-  border: 1px solid #0a3871;
-  border-radius: 16px;
-  margin: 10px 5px;
-  padding: 15px 50px;
-}
-
-.btnDecrypt {
-  width: 30%;
-  color: #0a3871;
-  background-color: #d8dfe8;
-  border: 1px solid #0a3871;
-  border-radius: 16px;
-  margin: 10px 5px;
-  padding: 15px 50px;
-}
-
-.container-logo {
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 40px;
-}
-
-#logo_alura {
-  margin: 0px 30px;
-  max-height: 70%;
-}
-
-.input-section {
+main{
   display: flex;
   flex-direction: column;
-  height: 100%;
-  flex: 70%;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
 }
 
-#btn_label {
-  justify-content: start;
+#logo_alura{
+  
 }
 
-#text-input {
-  width: 60%;
-  height: 64%;
-  margin: 0px;
+/* Truco con CSS para que el texarea crezca con el contenido */
+
+.grow-wrap {
+  display: grid;
+  flex-grow: 1;
 }
 
-.output-section {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  flex: 30%;
-  justify-content: center;
-  align-items: center;
+.grow-wrap::after {
+  content: attr(data-replicated-value) " ";
+  white-space: pre-wrap;
+  visibility: hidden;
 }
 
-#text-output {
-  color: #495057;
-  font-size: 18px;
-  height: 80%;
-  width: 90%;
-  margin: 5%;
-  background-image: url(img/munieco.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 90%;
+.grow-wrap>textarea{
+  resize: vertical;
+  overflow: hidden;
 }
 
-.container-output {
-  height: 95%;
-  width: 85%;
-  background-color: #ffff;
-  border-radius: 32px;
-  box-shadow: 1px 16px 28px -30px black;
-  box-sizing: border-box;
-}
+.grow-wrap > textarea, .grow-wrap::after {
+  border: 1px solid red;
+  padding: 0.5rem;
+  font: inherit;
+  
 
-#container-insider {
-  position: relative;
-  top: -20%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-#btn-copy-container {
-  position: relative;
-  top: -13%;
-}
-
-.btn-copy {
-  width: 90%;
-  color: #0a3871;
-  background-color: #ffff;
-  border: 1px solid #0a3871;
-  border-radius: 16px;
-  padding: 15px 50px;
-  /* display: none; */
-}
-
-footer {
-  display: flex;
-  height: 4vh;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: #0a3871;
-  color: #ffff;
-}
-
-.copyright {
-  font-size: 14px;
-  font-weight: 300;
-}
-
-@media only screen and (max-width: 768px) {
-  main {
-    flex-direction: column;
-    height: 96vh;
-  }
-
-  .input-section {
-    flex: 80%;
-    width: 100%;
-  }
-
-  .output-section {
-    flex: 15%;
-    width: 100%;
-  }
-
-  .container-output {
-    display: flex;
-    height: 70%;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  #text-output {
-    background-image: none;
-    margin: auto;
-    width: 90%;
-    height: 80%;
-    padding: 1rem;
-  }
-
-  #container-insider {
-    position: absolute;
-    top: 85vh;
-    right: 0;
-    left: 0;
-  }
-
-  #btn-copy-container {
-    display: none;
-  }
-
-  footer {
-    height: 4vh;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  #logo_alura {
-    margin: 0;
-    max-height: none;
-    margin-top: 25px;
-    margin-left: -25px;
-  }
-
-  input-section{
-    flex-shrink: 0;
-  }
-
-  #text-input {
-    width: 90%;
-    font-size: 32px;
-  }
-
-  #btn-label {
-    margin-left: 5%;
-  }
-
-  .btn {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  .btn > button {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .btnDecrypt {
-    background-color: #ffff;
-  }
-
-  .container-output{
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* #text-output{
-    resize: vertical;
-  } */
-
-  #container-insider {
-    align-items: center;
-    justify-content: center;  
-    width: 80%;
-    left: auto;
-    right: auto;
-    top: auto;
-    /* No estoy seguro de que paso aca pero funciono */
-  }
-
-  #container-insider > p {
-    width: 90%;
-  }
-
-  /* Nose como hacer crecer el texare sin que arruine todo lo que hay arriba */
+  grid-area: 1 / 1 / 2 / 2;
 }

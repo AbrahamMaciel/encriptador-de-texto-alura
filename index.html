@@ -12,61 +12,47 @@
   </head>
 
   <body>
-    <main class="main">
+    <header>
+      <img src="./img/Logo1x.png" alt="logo_alura" id="logo_alura" />
+    </header>
+    <main>
       <section class="input-section">
-        <div class="container-logo">
-          <img src="img/Logo1x.png" id="logo_alura" alt="logo_alura" />
+        <div class="container-textarea">
+          <div class="grow-wrap">
+            <textarea
+              title="input-textarea"
+              id="input-textarea"
+              placeholder="Ingrese el texto aqui"
+              onInput="this.parentNode.dataset.replicatedValue = this.value"
+            ></textarea>
+          </div>
+          <label for="container-textarea"
+            ><img
+              src="img/bi_exclamation-circle-fill1x.png"
+              alt="warning_icon"
+            />Solo letras minúsculas y sin acentos</label
+          >
         </div>
-
-        <textarea
-          title="text-input"
-          id="text-input"
-          placeholder="Ingrese el texto aqui"
-        ></textarea>
-
-        <label for="btn" id="btn-label"
-          ><img
-            src="img/bi_exclamation-circle-fill1x.png"
-            alt="warning_icon"
-          />Solo letras minúsculas y sin acentos</label
-        >
         <div class="btn">
           <button type="button" class="btn btnEncrypt">Encriptar</button>
           <button type="button" class="btn btnDecrypt">Desencriptar</button>
         </div>
       </section>
-
       <section class="output-section">
-        <div class="container-output">
-          <textarea title="text-output" id="text-output"></textarea>
-
-          <div id="container-insider">
-            <p
-              style="
-                font-weight: 700;
-                font-size: 24px;
-                color: #343a40;
-                padding-bottom: 10px;
-              "
-            >
-              Ningún mensaje fue encontrado
-            </p>
-            <p style="font-size: 16px; color: #495057">
-              Ingresa el texto que desees encriptar o desencriptar.
-            </p>
+        <div class="container-textarea">
+          <div class="grow-wrap">
+            <textarea
+              title="text-output"
+              id="text-output"
+              onInput="this.parentNode.dataset.replicatedValue = this.value"
+            ></textarea>
           </div>
-
-          <div class="btn" id="btn-copy-container">
-            <button type="button" class="btn-copy">Copiar</button>
-          </div>
+        </div>
+        <div class="btn" id="btn-copy-container">
+          <button type="button" class="btn-copy">Copiar</button>
         </div>
       </section>
     </main>
-
-    <footer>
-      <p class="copyright">
-        All rights reserved by the doguies of the prado&copy
-      </p>
-    </footer>
+    <footer>All rights reserved by the Doguies of the Prado</footer>
   </body>
 </html>
