@@ -1,16 +1,37 @@
-body{
+* {
+  box-sizing: border-box;
+}
+
+body {
   min-height: 100dvh;
 }
 
-main{
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
+header {
+  min-height: 10vh;
 }
 
-#logo_alura{
-  
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+}
+
+/* Por alguna razon si uso flex en el padre del textarea este se expande cuando tengo apretado una letra, que embole. */
+.input-section {
+  width: 100%;
+}
+
+.container-textarea {
+  width: 80%;
+}
+
+#input-textarea {
+}
+
+#logo_alura {
+}
+
+footer {
 }
 
 /* Truco con CSS para que el texarea crezca con el contenido */
@@ -26,16 +47,16 @@ main{
   visibility: hidden;
 }
 
-.grow-wrap>textarea{
+.grow-wrap > textarea {
   resize: vertical;
   overflow: hidden;
 }
 
-.grow-wrap > textarea, .grow-wrap::after {
+.grow-wrap > textarea,
+.grow-wrap::after {
   border: 1px solid red;
   padding: 0.5rem;
   font: inherit;
-  
 
   grid-area: 1 / 1 / 2 / 2;
 }
