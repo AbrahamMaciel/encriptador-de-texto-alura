@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -8,17 +9,37 @@ body {
 
 header {
   min-height: 10vh;
+  padding-top: 30px;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  min-height: 80vh;
+  min-height: 86vh;
+  align-items: center;
+  /* justify-content: center; */
+ 
 }
 
 /* Por alguna razon si uso flex en el padre del textarea este se expande cuando tengo apretado una letra, que embole. */
 .input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+  min-height: 70vh;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.output-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 14vh;
+  flex-grow: 1;
+  /* justify-content: end; */
 }
 
 .container-textarea {
@@ -32,6 +53,13 @@ main {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: blue;
+  min-height: 4vh;
+  font-family: "Inter", sans-serif;
 }
 
 /* Truco con CSS para que el texarea crezca con el contenido */
