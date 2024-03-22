@@ -4,8 +4,11 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   min-height: 100dvh;
-  background-color: #F3F5FC;
+  background-color: #f3f5fc;
+  box-sizing: border-box;
 }
 
 header {
@@ -16,11 +19,11 @@ header {
 main {
   display: flex;
   flex-direction: column;
-  min-height: 86vh;
+  /* min-height: 86vh; */
   align-items: center;
   /* justify-content: center; */
   box-sizing: border-box;
- 
+  flex-grow: 1;
 }
 
 /* Por alguna razon si uso flex en el padre del textarea este se expande cuando tengo apretado una letra, que embole. */
@@ -29,25 +32,25 @@ main {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-height: 70vh;
+  /* min-height: 70vh; */
   flex-grow: 1;
   flex-shrink: 0;
   justify-content: center;
 }
 
-.output-section{
+.output-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   /* min-height: 14vh; */
   flex-grow: 1;
-  /* justify-content: end; */
+  justify-content: center;
 }
 
 .container-textarea-input {
   width: 80%;
-  min-height: 55vh;
+  /* min-height: 55vh; */
   font-size: 24px;
   /* Por alguna razon si toco el fontsize en el textarea en vez del container el texto queda overfloweado y queda pa la mierda, hace rato que me estaba rompiendo la cabeza con esto */
 }
@@ -67,14 +70,13 @@ main {
   border-radius: 20px;
 }
 
-.label-container{
+.label-container {
   display: flex;
-  height: 5vh;
+  /* height: 5vh; */
   align-items: end;
-  
 }
 
-#label-input-textarea{
+#label-input-textarea {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,12 +85,31 @@ main {
 }
 
 #input-textarea {
-  min-height: 50vh;
+  min-height: 40vh;
   background: none;
   border: none;
   color: #0a3871;
   text-transform: lowercase;
-  /* font-size: 24px; NO CAMBIAR!*/ 
+  /* font-size: 24px; NO CAMBIAR!*/
+}
+
+.container-output{
+  display: inherit;
+  flex-direction: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  background-color: aquamarine;
+  width: 90%;
+  /* padding: 30px 0px; */
+  border-radius: 32px;
+}
+
+.container-textarea-output{
+  width: 100%;
+}
+
+#text-output{
+  height: 1vh;
 }
 
 #logo_alura {
@@ -102,6 +123,17 @@ footer {
   background-color: blue;
   min-height: 4vh;
   font-family: "Inter", sans-serif;
+  margin-top: auto;
+}
+
+/* Detalles */
+
+::placeholder {
+  color: #0a3871;
+}
+
+textarea:focus {
+  outline: none;
 }
 
 /* Truco con CSS para que el texarea crezca con el contenido */

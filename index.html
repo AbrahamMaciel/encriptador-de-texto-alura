@@ -28,11 +28,11 @@
           </div>
           <div class="label-container">
             <label for="container-textarea" id="label-input-textarea"
-            ><img
-              src="img/bi_exclamation-circle-fill1x.png"
-              alt="warning_icon"
-            />Solo letras minúsculas y sin acentos</label
-          >
+              ><img
+                src="img/bi_exclamation-circle-fill1x.png"
+                alt="warning_icon"
+              />Solo letras minúsculas y sin acentos</label
+            >
           </div>
         </div>
         <div class="btn input">
@@ -41,17 +41,19 @@
         </div>
       </section>
       <section class="output-section">
-        <div class="container-textarea">
-          <div class="grow-wrap">
-            <textarea
-              title="text-output"
-              id="text-output"
-              onInput="this.parentNode.dataset.replicatedValue = this.value"
-            ></textarea>
+        <div class="container-output">
+          <div class="container-textarea-output">
+            <div class="grow-wrap">
+              <textarea
+                title="text-output"
+                id="text-output"
+                onInput="this.parentNode.dataset.replicatedValue = this.value"
+              ></textarea>
+            </div>
           </div>
-        </div>
-        <div class="btn" id="btn-copy-container">
-          <button type="button" class="btn-copy">Copiar</button>
+          <div class="btn" id="btn-copy-container">
+            <button type="button" class="btn-copy">Copiar</button>
+          </div>
         </div>
       </section>
     </main>
